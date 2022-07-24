@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    background-color: yellowgreen;
+    background-color: tomato;
 }
 
 .header-line-wrap {
@@ -43,8 +43,7 @@ body {
 }
 
 nav a,
-.header-address {
-    padding: 0 65px;
+.header-address address {
     font-size: 14px;
     line-height: 35px;
     color: #060606;
@@ -52,7 +51,6 @@ nav a,
     font-family: "Poppins";
     text-decoration: none;
     font-style: normal;
-    position: relative;
     transition: 1s ease all;
 }
 
@@ -61,25 +59,23 @@ nav a:hover,
     color: #2d3dad;
 }
 
-.header-phone::before {
-    content: url(../img/phone.png);
-    position: absolute;
-    transform: translate(-100%, 10%);
-    padding-right: 7px;
+.header-phone {
+    background: url(../img/phone.png) no-repeat;
+    background-position: 0 4px;
+    padding-left: 25px;
 }
 
-.header-email::before {
-    content: url(../img/email.png);
-    position: absolute;
-    transform: translate(-100%, 10%);
-    padding-right: 7px;
+.header-email {
+    background: url(../img/email.png) no-repeat;
+    background-position: 0 7px;
+    padding-left: 30px;
+    margin: 0 60px;
 }
 
-.header-address::before {
-    content: url(../img/location.png);
-    position: absolute;
-    transform: translate(-100%, 10%);
-    padding-right: 7px;
+.header-address {
+    background: url(../img/location.png) no-repeat;
+    background-position: 0 4px;
+    padding-left: 25px;
 }
 
 .burger-menu {
@@ -149,11 +145,12 @@ h1 {
     color: #060606;
     font-weight: 400;
     font-family: "Poppins";
-    min-width: 600px;
+    max-width: 600px;
     margin-bottom: 50px;
 }
 
 .header-button-line a {
+    display: inline-block;
     font-size: 14px;
     line-height: 35px;
     color: #fafafa;
@@ -309,7 +306,7 @@ h1 {
 
 .services-bloc figure {
     margin: 0;
-    height: 820px;
+    height: 100%;
 }
 
 .services-bloc img {
@@ -370,9 +367,12 @@ h1 {
 
 .carwash-1::before {
     content: '';
+    border: 36px solid #ffffff;
     width: 70px;
     height: 70px;
-    background: #ffffff;
+    box-sizing: border-box;
+    border-top: 35px solid transparent;
+    border-left: 35px solid transparent;
     position: absolute;
     transform: translate(-50%, -50%) rotate(45deg);
     top: 100%;
@@ -382,9 +382,12 @@ h1 {
 
 .carwash-2::before {
     content: '';
+    border: 36px solid #ffffff;
     width: 70px;
     height: 70px;
-    background: #ffffff;
+    box-sizing: border-box;
+    border-bottom: 35px solid transparent;
+    border-right: 35px solid transparent;
     position: absolute;
     transform: translate(-50%, -50%) rotate(45deg);
     top: -3px;
@@ -651,7 +654,7 @@ h1 {
     justify-content: space-between;
 }
 
-.joech {
+.worker {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -659,11 +662,11 @@ h1 {
     box-shadow: 0px -4px 15px 5px rgb(0 0 0 / 9%);
 }
 
-.joech-right-bloc {
+.worker-right-bloc {
     margin-left: 50px;
 }
 
-.joech p {
+.worker p {
     max-width: 659px;
     margin-bottom: 20px;
     font-size: 15px;
@@ -673,7 +676,7 @@ h1 {
     font-family: "Poppins";
 }
 
-.joech h3 {
+.worker h3 {
     font-size: 17px;
     color: #0c0c0c;
     font-weight: 400;
@@ -682,7 +685,7 @@ h1 {
     margin-bottom: 4px;
 }
 
-.joech a {
+.worker a {
     display: block;
     font-size: 10px;
     line-height: 30px;
@@ -695,7 +698,7 @@ h1 {
     transition: 1s ease all;
 }
 
-.joech a:hover {
+.worker a:hover {
     color: #0c0c0c;
 }
 
@@ -790,9 +793,9 @@ footer {
     padding: 0;
 }
 
-.footer-contact address,
-.footer-phone,
-.footer-email {
+.footer-address address,
+.footer-phone a,
+.footer-email a {
     display: inline-block;
     opacity: .5;
     font-style: normal;
@@ -802,35 +805,32 @@ footer {
     font-weight: 400;
     font-family: "Open Sans";
     padding-left: 25px;
-    position: relative;
     margin-bottom: 15px;
     transition: 1s ease all;
     text-decoration: none;
 }
 
-.footer-contact address::before {
-    content: url(../img/location-gray.png);
-    position: absolute;
-    left: 0;
+.footer-address {
+    background: url(../img/location-gray.png) no-repeat;
+    background-position: 0 10px;
+
 }
 
 .footer-contact address:hover,
-.footer-phone:hover,
-.footer-email:hover,
+.footer-phone a:hover,
+.footer-email a:hover,
 .footer-link a:hover {
     opacity: 1;
 }
 
-.footer-phone::before {
-    content: url(../img/phone-gray.png);
-    position: absolute;
-    left: 0;
+.footer-phone {
+    background: url(../img/phone-gray.png) no-repeat;
+    background-position: 0 10px;
 }
 
-.footer-email::before {
-    content: url(../img/email-gray.png);
-    position: absolute;
-    left: 0;
+.footer-email {
+    background: url(../img/email-gray.png) no-repeat;
+    background-position: 0 12px;
 }
 
 .footer-link a {
@@ -880,19 +880,19 @@ footer {
     transition: 1s ease all;
 }
 
-.footer-newsletter a:hover{
+.footer-newsletter a:hover {
     background-color: #f9fafb;
     color: #0b0b0b;
 }
 
-.social-networks{
+.social-networks {
     display: flex;
     justify-content: center;
     padding-top: 55px;
     padding-bottom: 40px;
 }
 
-.facebook{
+.facebook {
     display: block;
     width: 30px;
     height: 30px;
@@ -900,7 +900,7 @@ footer {
     margin: 0 3px;
 }
 
-.twitter{
+.twitter {
     display: block;
     width: 30px;
     height: 30px;
@@ -908,7 +908,7 @@ footer {
     margin: 0 3px;
 }
 
-.in{
+.in {
     display: block;
     width: 30px;
     height: 30px;
@@ -916,27 +916,270 @@ footer {
     margin: 0 3px;
 }
 
-.instagram{
+.instagram {
     display: block;
     width: 30px;
     height: 30px;
     background: url(../img/instagram.png) no-repeat;
     margin: 0 3px;
 }
-footer hr{
-    width: 1062px;
+
+footer hr {
     height: 2px;
     background-color: #ffffff;
     margin-bottom: 40px;
 }
 
-.footer-text p{
+.footer-text p {
     font-size: 17px;
-line-height: 32px;
-color: #fefdfd;
-font-weight: 400;
-font-family: "Poppins";
-margin: 0 auto;
-padding-bottom: 40px;
-text-align: center;
+    line-height: 32px;
+    color: #fefdfd;
+    font-weight: 400;
+    font-family: "Poppins";
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width:1440px) {
+
+    .header-phone a,
+    .header-email a,
+    .header-address {
+        margin: 0 40px;
+    }
+
+    .header-content-riht-bloc img {
+        width: 500px;
+    }
+
+    h1 {
+        line-height: 80px;
+        margin-bottom: 25px;
+    }
+
+    .header-content p {
+        margin-bottom: 30px;
+    }
+
+    .header-button-line a {
+        padding: 10px 35px;
+    }
+
+    .quality-bg h3 {
+        margin-bottom: 80px;
+    }
+
+    .quality-bg p {
+        margin-bottom: 80px;
+    }
+
+    .worker {
+        box-sizing: border-box;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1240px) {
+
+    .header-phone a,
+    .header-email a,
+    .header-address {
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+        line-height: 60px;
+    }
+
+    .header-content-riht-bloc img {
+        width: 400px;
+    }
+
+    .header-button-line a {
+        padding: 6px 35px;
+    }
+}
+
+@media screen and (max-width:1060px) {
+    .header-logo img {
+        width: 80%;
+    }
+
+    .header-logo p {
+        font-size: 14px;
+        margin-left: -18px;
+    }
+
+    .header-phone a,
+    .header-email a,
+    .header-address address {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .header-email {
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+        max-width: 400px;
+        margin-bottom: 10px;
+        line-height: 40px;
+    }
+
+    .header-content p {
+        font-size: 12px;
+        margin-bottom: 15px;
+        max-width: 300px;
+    }
+
+    .header-button-line a {
+        font-size: 12px;
+        padding: 4px 30px;
+    }
+
+    .header-content-riht-bloc img {
+        margin-left: -300px;
+    }
+
+    .header-arrow-right,
+    .header-arrow-left {
+        width: 45px;
+        height: 45px;
+    }
+
+    .services-headerline h2:first-child,
+    .services-headerline h2:last-child,
+    .quality-headerline h2:first-child,
+    .quality-headerline h2:last-child,
+    .choose-headerline h2:first-child,
+    .choose-headerline h2:last-child {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .services hr {
+        height: 6px;
+        margin-bottom: 50px;
+    }
+
+    .services h3 {
+        font-size: 20px;
+        line-height: 25px;
+        padding-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .services p {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .services figcaption {
+        height: 310px;
+        padding: 0 30px;
+    }
+
+    .services-bloc img {
+        height: 310px;
+    }
+
+    .quality hr {
+        height: 6px;
+        margin-top: -30px;
+    }
+
+    .quality-top {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .quality-bg {
+        padding: 100px 0;
+    }
+
+    .quality-bg h3 {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .quality-bg p {
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+
+    .quality-bg a {
+        font-size: 15px;
+        padding: 20px 0;
+        width: 220px;
+    }
+
+    .choose-wrap {
+        padding-top: 90px;
+    }
+
+    .choose hr,
+    .testimonial hr {
+        height: 6px;
+        margin-bottom: 60px;
+    }
+
+    .testimonial-wrap {
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+
+    .testimonial h2 {
+        font-size: 30px;
+    }
+
+    .testimonial-arrow-left,
+    .testimonial-arrow-right {
+        width: 50px;
+        height: 50px;
+    }
+
+    .worker {
+        width: 70%;
+        padding: 35px 50px;
+    }
+
+    .worker p {
+        font-size: 12px;
+    }
+
+    footer {
+        padding-top: 130px;
+    }
+
+    .footer-line h2,
+    .footer-text p {
+        font-size: 15px;
+    }
+
+    .footer-address address,
+    .footer-phone a,
+    .footer-email a,
+    .footer-link a,
+    .footer-opening time {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .facebook,
+    .twitter,
+    .in,
+    .instagram {
+        background-size: 25px 25px;
+    }
+
+    .social-networks {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
 }
