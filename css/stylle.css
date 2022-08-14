@@ -1,5 +1,6 @@
 body {
     margin: 0 auto;
+    background-color: tomato;
 }
 
 .header-line-wrap {
@@ -109,6 +110,22 @@ nav a:hover,
     transform: translate(-14px, 4px);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header-content-wrap {
     display: flex;
     align-items: center;
@@ -118,7 +135,7 @@ nav a:hover,
 }
 
 .wrapper-header-content {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -126,7 +143,15 @@ nav a:hover,
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: -40px;
+}
+
+.header-image {
+    display: flex;
+    align-items: center;
+}
+
+.header-arrow {
+    padding-left: 10px;
 }
 
 h1 {
@@ -169,7 +194,6 @@ h1 {
 
 .header-content-riht-bloc img {
     width: 700px;
-    margin-left: -90px;
     margin-bottom: -40px;
 }
 
@@ -254,9 +278,25 @@ h1 {
 }
 
 .wrapper {
-    width: 86%;
+    width: 90%;
     margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .services-headerline {
     display: flex;
@@ -803,7 +843,7 @@ footer {
     color: #ffffff;
     font-weight: 400;
     font-family: "Open Sans";
-    padding-left: 15px;
+    padding-left: 20px;
     margin-bottom: 15px;
     transition: 1s ease all;
     text-decoration: none;
@@ -899,6 +939,7 @@ footer {
     width: 30px;
     height: 30px;
     background: url(../img/facebook.png) no-repeat;
+    transition: 1s ease all;
     margin: 0 3px;
 }
 
@@ -907,6 +948,7 @@ footer {
     width: 30px;
     height: 30px;
     background: url(../img/twitter.png) no-repeat;
+    transition: 1s ease all;
     margin: 0 3px;
 }
 
@@ -915,6 +957,7 @@ footer {
     width: 30px;
     height: 30px;
     background: url(../img/in.png) no-repeat;
+    transition: 1s ease all;
     margin: 0 3px;
 }
 
@@ -924,6 +967,11 @@ footer {
     height: 30px;
     background: url(../img/instagram.png) no-repeat;
     margin: 0 3px;
+    transition: 1s ease all;
+}
+
+.facebook:hover,.twitter:hover,.in:hover,.instagram:hover{
+    transform: scale(1.1);
 }
 
 footer hr {
@@ -943,7 +991,7 @@ footer hr {
     text-align: center;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width:1445px) {
 
     .header-phone a,
     .header-email a,
@@ -966,6 +1014,11 @@ footer hr {
 
     .header-button-line a {
         padding: 10px 35px;
+    }
+
+    .services h3 {
+        line-height: 35px;
+        padding-top: 40px;
     }
 
     .quality-bg h3 {
@@ -1003,9 +1056,17 @@ footer hr {
     .header-button-line a {
         padding: 6px 35px;
     }
+
 }
 
-@media screen and (max-width:1060px) {
+@media screen and(max-width:1200px) {
+    .header-arrow {
+        margin-right: -40px;
+    }
+}
+
+
+@media screen and (max-width:1110px) {
     .header-logo img {
         width: 80%;
     }
@@ -1044,10 +1105,6 @@ footer hr {
         padding: 4px 30px;
     }
 
-    .header-content-riht-bloc img {
-        margin-left: -300px;
-    }
-
     .header-arrow-right,
     .header-arrow-left {
         width: 45px;
@@ -1071,13 +1128,13 @@ footer hr {
 
     .services h3 {
         font-size: 20px;
-        line-height: 25px;
+        line-height: 20px;
         padding-top: 30px;
         margin-bottom: 15px;
     }
 
     .services p {
-        font-size: 12px;
+        font-size: 15px;
         line-height: 20px;
         margin-bottom: 20px;
     }
@@ -1188,6 +1245,28 @@ footer hr {
     }
 }
 
+@media screen and (max-width:920px) {
+
+    .header-content p,
+    h1 {
+        max-width: 240px;
+    }
+
+    .header-content-riht-bloc img {
+        width: 350px;
+    }
+
+    .header-button-line a {
+        padding: 4px 20px;
+    }
+
+    .services p {
+        font-size: 15px;
+        line-height: 15px;
+
+    }
+}
+
 @media screen and (max-width:850px) {
     .header-line {
         margin: 0 20px;
@@ -1230,7 +1309,7 @@ footer hr {
     }
 
     .header-content-riht-bloc img {
-        margin-left: -420px;
+        width: 350px;
     }
 
     .carwash-2::before {
@@ -1390,7 +1469,6 @@ footer hr {
     }
 
     .header-content-riht-bloc img {
-        margin-left: -280px;
         width: 250px;
     }
 
@@ -1401,29 +1479,70 @@ footer hr {
     }
 
     .services p {
-        font-size: 9px;
-        line-height: 12px;
+        font-size: 14px;
+        line-height: 20px;
         margin-bottom: 10px;
+        overflow-y: hidden;
+    }
+
+    .carwash-1::before {
+        content: '';
+        width: 60px;
+        height: 60px;
+        box-sizing: border-box;
+        border-bottom: 30px solid transparent;
+        border-right: 30px solid #ffffff;
+        border-top: 30px solid #ffffff;
+        left: 100%;
+        top: 60%;
     }
 
     .services h3 {
-        font-size: 12px;
-        line-height: 12px;
-        padding-top: 12px;
+        font-size: 22px;
+        line-height: 22px;
+        padding-top: 40px;
         margin-bottom: 8px;
     }
 
-    .services a {
-        font-size: 10px;
+    .services-bloc img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .services-bloc {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 86.5%;
+        margin: 0 auto;
     }
 
     .services figcaption {
-        height: 170px;
+        width: 50%;
+        height: 50%;
     }
 
-    .services-bloc img {
-        height: 170px;
+    .services-bloc figure {
+        display: flex;
     }
+
+    .services a {
+        font-size: 15px;
+    }
+
+    .carwash-2::before {
+        content: '';
+        width: 60px;
+        height: 60px;
+        box-sizing: border-box;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid #ffffff;
+        border-top: 30px solid transparent;
+        border-left: 30px solid #ffffff;
+        top: 60%;
+        left: 0;
+    }
+
 
     .services-wrap {
         padding-top: 40px;
@@ -1525,67 +1644,67 @@ footer hr {
     }
 }
 
+@media screen and (max-width:700px) {
+    .services h3 {
+        font-size: 18px;
+        line-height: 18px;
+        padding-top: 30px;
+    }
+
+    .services p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .header-button-line a {
+        margin-right: 5px;
+    }
+}
+
 @media screen and (max-width:600px) {
-    .header-logo p {
-        margin-left: -55px;
-    }
-
     .header-line ul {
-        display: block;
+        display: none;
     }
 
-    .header-phone {
-        background-position: 0 6px;
-        padding-left: 15px;
+    h1 {
+        font-size: 40px;
+        margin-bottom: 0;
+        line-height: 40px;
+        max-width: none;
     }
 
-    nav a,
-    .header-address address {
-        font-size: 8px;
-        line-height: 20px;
-    }
-
-    .header-email {
-        background-position: 0px 6px;
-        background-size: 13px;
-        margin: 0;
-        padding-left: 18px;
-    }
-
-    .header-address {
-        background-position: 3px 3px;
-        background-size: 9px;
-        margin: 0;
-        padding-left: 20px;
-    }
-
-    .header-line ul {
-        margin-left: -100px;
-    }
     .header-content p {
-        max-width: 160px;
+        max-width: none;
+        font-size: 12px;
+    }
+
+    .header-button-line {
+        margin-bottom: 30px;
     }
 
     .header-button-line a {
-        font-size: 9px;
-        padding: 0px 10px;
+        font-size: 12px;
+        padding: 6px 20px;
         margin-right: 6px;
         line-height: 25px;
     }
 
-    h1 {
-        font-size: 18px;
-        margin-bottom: 0;
-    }
-
-    .header-content p {
-        font-size: 10px;
-        margin-bottom: 10px;
+    .header-content {
+        display: block;
     }
 
     .header-content-riht-bloc img {
-        margin-left: -220px;
-        width: 200px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .header-arrow {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding-top: 20px;
     }
 
     .header-arrow-right,
@@ -1598,9 +1717,9 @@ footer hr {
     .header-arrow-right:before {
         content: '';
         position: absolute;
-        width: 3px;
-        height: 3px;
-        border: 2px solid #ffffff;
+        width: 5px;
+        height: 5px;
+        border: 3px solid #ffffff;
         transform: translate(-50%, -50%) rotate(45deg);
         top: 50%;
         left: 55%;
@@ -1612,31 +1731,19 @@ footer hr {
         content: '';
         position: absolute;
         width: 9px;
-        height: 2px;
+        height: 3px;
         background: #ffffff;
         transform: translate(-70%, -50%);
         top: 50%;
         left: 55%;
     }
 
-    .header-arrow-left:before {
-        content: '';
-        position: absolute;
-        width: 3px;
-        height: 3px;
-        border: 2px solid #ffffff;
-        transform: translate(-50%, -50%) rotate(45deg);
-        top: 50%;
-        left: 45%;
-        border-top: none;
-        border-right: none;
-    }
 
     .header-arrow-left::after {
         content: '';
         position: absolute;
         width: 9px;
-        height: 2px;
+        height: 3px;
         background: #ffffff;
         transform: translate(-30%, -50%);
         top: 50%;
@@ -1671,17 +1778,24 @@ footer hr {
         padding-bottom: 20px;
     }
 
+    .services h3 {
+        padding-top: 18px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+
     .services p {
-        height: 70px;
-        overflow-y: scroll;
+        font-size: 12px;
+        line-height: 14px;
     }
 
     .services figcaption {
-        height: 150px;
+        height: 50%;
     }
 
     .services-bloc img {
-        height: 150px;
+        width: 50%;
+        height: 50%;
     }
 
     .quality-top {
@@ -1783,106 +1897,185 @@ footer hr {
         width: 35%;
     }
 }
+
+@media screen and (max-width:550px) {
+    .services p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .carwash-1::before {
+        content: '';
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid #ffffff;
+        border-top: 20px solid #ffffff;
+        border-left: 20px solid transparent;
+        left: 100%;
+        top: 60%;
+    }
+
+    .carwash-2::before {
+        content: '';
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #ffffff;
+        border-top: 20px solid transparent;
+        border-left: 20px solid #ffffff;
+        top: 60%;
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .services h3 {
+        padding-top: 15px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .services p {
+        height: 80px;
+        overflow-y: scroll;
+    }
+
+    .services a {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width:420px) {
     .header-button-line a {
         font-size: 7px;
         margin-right: 0px;
     }
+
     h1 {
         font-size: 15px;
     }
+
     .header-content p {
         max-width: 130px;
         font-size: 9px;
     }
-    .header-content-riht-bloc img {
-        margin-left: -163px;
-        width: 130px;
-    }
-    .services figcaption {
-        height: 120px;
-    }
+
+
     .services h3 {
         font-size: 10px;
     }
+
     .services p {
-        height: 45px;
+        height: 60px;
     }
-    .services-bloc img {
-        height: 120px;
+
+    .carwash-1::before {
+        content: '';
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+        border-bottom: 16px solid transparent;
+        border-right: 16px solid #ffffff;
+        border-top: 16px solid #ffffff;
+        border-left: 16px solid transparent;
+        left: 100%;
+        top: 60%;
     }
-    .services-headerline h2:first-child, .services-headerline h2:last-child, .quality-headerline h2:first-child, .quality-headerline h2:last-child, .choose-headerline h2:first-child, .choose-headerline h2:last-child, .testimonial h2 {
+
+    .carwash-2::before {
+        content: '';
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+        border-right: 16px solid transparent;
+        border-bottom: 16px solid #ffffff;
+        border-top: 16px solid transparent;
+        border-left: 16px solid #ffffff;
+        top: 60%;
+        left: 0;
+    }
+
+    .services-headerline h2:first-child,
+    .services-headerline h2:last-child,
+    .quality-headerline h2:first-child,
+    .quality-headerline h2:last-child,
+    .choose-headerline h2:first-child,
+    .choose-headerline h2:last-child,
+    .testimonial h2 {
         font-size: 14px;
         margin: 0;
     }
-    .carwash-1::before {
-        content: '';
-        border: 25px solid #ffffff;
-        width: 30px;
-        height: 30px;
-        box-sizing: border-box;
-        border-top: 15px solid transparent;
-        border-left: 15px solid transparent;
-        position: absolute;
-        transform: translate(-50%, -50%) rotate(45deg);
-        top: 99%;
-        z-index: 1;
-        left: 50%;
-    }
-    .carwash-2::before {
-        content: '';
-        border: 25px solid #ffffff;
-        width: 30px;
-        height: 30px;
-        box-sizing: border-box;
-        border-bottom: 15px solid transparent;
-        border-right: 15px solid transparent;
-        position: absolute;
-        transform: translate(-50%, -50%) rotate(45deg);
-        z-index: 1;
-        left: 50%;
-        top: 0;
-    }
-    .trusted, .talented, .organic {
+
+    .trusted,
+    .talented,
+    .organic {
         padding: 15px 20px;
     }
+
     .choose-text {
         font-size: 12px;
         line-height: 20px;
     }
+
     .worker-right-bloc {
         margin-left: 20px;
     }
+
     .worker h3 {
         font-size: 12px;
     }
-    .worker p{
+
+    .worker p {
         margin-bottom: 10px;
         font-size: 9px;
     }
+
     .footer-line {
         flex-wrap: wrap;
         justify-content: normal;
     }
-    .footer-contact{
+
+    .footer-contact {
         margin-right: 60px;
     }
-    .footer-opening{
+
+    .footer-opening {
         margin-right: 20px;
     }
-    .facebook, .twitter, .in, .instagram {
+
+    .facebook,
+    .twitter,
+    .in,
+    .instagram {
         background-size: 15px 15px;
         width: 15px;
         height: 15px;
     }
+
     .social-networks {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
     .footer-text p {
         font-size: 9px;
         line-height: 10px;
         padding-bottom: 20px;
     }
 
+}
+
+@media screen and (max-width:360px) {
+    .services p {
+        height: 50px;
+    }
+
+    .services a {
+        font-size: 10px;
+        line-height: 10px;
+    }
 }
