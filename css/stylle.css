@@ -970,7 +970,10 @@ footer {
     transition: 1s ease all;
 }
 
-.facebook:hover,.twitter:hover,.in:hover,.instagram:hover{
+.facebook:hover,
+.twitter:hover,
+.in:hover,
+.instagram:hover {
     transform: scale(1.1);
 }
 
@@ -993,8 +996,8 @@ footer hr {
 
 @media screen and (max-width:1445px) {
 
-    .header-phone a,
-    .header-email a,
+    .header-phone,
+    .header-email,
     .header-address {
         margin: 0 40px;
     }
@@ -1627,6 +1630,8 @@ footer hr {
 
     .footer-line {
         padding-bottom: 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .facebook,
