@@ -994,12 +994,16 @@ footer hr {
     text-align: center;
 }
 
-@media screen and (max-width:1445px) {
+@media screen and (max-width:1440px) {
 
     .header-phone,
     .header-email,
     .header-address {
-        margin: 0 40px;
+        margin: 0 10px;
+    }
+
+    .header-line ul{
+        margin-left: -100px;
     }
 
     .header-content-riht-bloc img {
@@ -1420,12 +1424,6 @@ footer hr {
         background-size: 9px;
     }
 
-    .header-phone a,
-    .header-email a,
-    .header-address address {
-        font-size: 8px;
-    }
-
     .burger-line {
         width: 10px;
         height: 3px;
@@ -1665,6 +1663,22 @@ footer hr {
 @media screen and (max-width:650px) {
     .header-button-line a {
         margin-right: 5px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .services p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .services h3 {
+        padding-top: 20px;
+    }
+    .choose-text {
+        font-size: 18px;
+    }
+    .choose-info h3 {
+        font-size: 25px;
     }
 }
 
@@ -1956,6 +1970,9 @@ footer hr {
 
     .services a {
         font-size: 12px;
+    }
+    .worker-right-bloc {
+        margin-left: 30px;
     }
 }
 
