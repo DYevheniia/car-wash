@@ -1397,12 +1397,12 @@ footer hr {
 
 @media screen and (max-width:790px) {
     .header-logo img {
-        width: 50%;
+        width: 60%;
     }
 
     .header-logo p {
-        font-size: 10px;
-        margin-left: -50px;
+        font-size: 13px;
+        margin-left: -40px;
     }
 
     .header-phone {
@@ -1681,8 +1681,8 @@ footer hr {
     }
 
     .header-content p {
-        max-width: none;
-        font-size: 12px;
+        max-width: 90%;
+        font-size: 15px;
     }
 
     .header-button-line {
@@ -1792,6 +1792,7 @@ footer hr {
     .services p {
         font-size: 12px;
         line-height: 14px;
+        padding-right: 10px;
     }
 
     .services figcaption {
@@ -1901,6 +1902,10 @@ footer hr {
     .worker img {
         width: 35%;
     }
+
+    .footer-line {
+        justify-content: space-around;
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -1956,17 +1961,12 @@ footer hr {
 
 @media screen and (max-width:420px) {
     .header-button-line a {
-        font-size: 7px;
+        font-size: 10px;
         margin-right: 0px;
     }
 
     h1 {
         font-size: 15px;
-    }
-
-    .header-content p {
-        max-width: 130px;
-        font-size: 9px;
     }
 
 
@@ -2041,7 +2041,6 @@ footer hr {
 
     .footer-line {
         flex-wrap: wrap;
-        justify-content: normal;
     }
 
     .footer-contact {
@@ -2056,9 +2055,9 @@ footer hr {
     .twitter,
     .in,
     .instagram {
-        background-size: 15px 15px;
-        width: 15px;
-        height: 15px;
+        background-size: 25px 25px;
+        width: 25px;
+        height: 25px;
     }
 
     .social-networks {
