@@ -79,6 +79,7 @@ nav a:hover,
 }
 
 .burger-menu {
+    display: inline-block;
     cursor: pointer;
 }
 
@@ -1424,26 +1425,6 @@ footer hr {
         background-size: 9px;
     }
 
-    .burger-line {
-        width: 10px;
-        height: 3px;
-    }
-
-    .burger-line::before {
-        content: '';
-        width: 18px;
-        height: 3px;
-        top: -3px;
-        transform: translate(-8px, -3px);
-    }
-
-    .burger-line::after {
-        content: '';
-        width: 18px;
-        height: 3px;
-        top: 8px;
-        transform: translate(-8px, -3px);
-    }
 
     .header-line-wrap {
         padding-top: 10px;
@@ -1980,10 +1961,6 @@ footer hr {
     .header-button-line a {
         font-size: 10px;
         margin-right: 0px;
-    }
-
-    h1 {
-        font-size: 15px;
     }
 
 
